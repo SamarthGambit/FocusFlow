@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,9 +51,7 @@
   </style>
 </head>
 <body class="gradient-bg min-h-screen text-white">
-  <!-- Full Screen Toggle Button -->
-  <button id="fullScreenBtn" class="fullscreen-btn" onclick="toggleFullScreen()">Full Screen</button>
-
+  
   <div class="container mx-auto px-4 py-8 h-screen flex flex-col">
     <!-- Header -->
     <div class="text-center mb-8">
@@ -131,18 +130,7 @@
 
   <!-- JavaScript Section -->
   <script>
-    // Full Screen Toggle Functionality
-    function toggleFullScreen() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen().catch(err => {
-          console.error(`Error attempting to enable full-screen mode: ${err.message}`);
-        });
-        document.getElementById('fullScreenBtn').textContent = "Exit Full Screen";
-      } else {
-        document.exitFullscreen();
-        document.getElementById('fullScreenBtn').textContent = "Full Screen";
-      }
-    }
+    
 
     // Initialize Firebase
     const firebaseConfig = {
